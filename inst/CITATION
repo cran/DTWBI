@@ -1,0 +1,35 @@
+bibentry(bibtype = "Article",
+           header       = "To cite the associated publication use:",
+         
+           title        = "Dynamic time warping-based imputation for univariate time series data",
+           author       = "Thi-Thu-Hong Phan and Emilie Poisson-Caillault and Alain Lefebvre and Andre Bigand",
+           journal      = "Pattern Recognition Letters",
+           year         = "2017",
+	issn = "0167-8655",
+	doi = "10.1016/j.patrec.2017.08.019",
+	url = "http://www.sciencedirect.com/science/article/pii/S0167865517302751",
+	keywords = "Imputation, Missing data, Univariate time series, DTW, Similarity"
+
+           ## textVersion  = paste("Thi-Thu-Hong Phan and Emilie Poisson-Caillault and Alain Lefebvre and Andre Bigand (2017)",
+           ##   "Dynamic time warping-based imputation for univariate time series data.",
+           ##   "Pattern Recognition Letters.",
+           ##   "URL https://doi.org/10.1016/j.patrec.2017.08.019"),
+)
+
+bibentry(bibtype = "Article",
+           header       = "This package relies on DTW algorithm:",
+         
+           title        = "Computing and Visualizing Dynamic Time Warping Alignments in {R}: The {dtw} Package",
+           author       = as.person("Toni Giorgino"),
+           journal      = "Journal of Statistical Software",
+           year         = "2009",
+           volume       = "31",
+           number       = "7",
+           pages        = "1--24",
+           url          = "http://www.jstatsoft.org/v31/i07/",
+
+           ## textVersion  = paste("Toni Giorgino (2009).",
+           ##   "Computing and Visualizing Dynamic Time Warping Alignments in R: The dtw Package.",
+           ##   "Journal of Statistical Software, 31(7), 1-24.",
+           ##   "URL http://www.jstatsoft.org/v31/i07/"),
+)
