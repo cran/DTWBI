@@ -1,5 +1,5 @@
 #' @title Local derivative estimate to compute DDTW
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description This function estimates the local derivative of a vector.
 #' It can be used as an input in dtw() function (package dtw) to align two univariate signals.
 #' @param X input vector from which local derivative has to be calculated

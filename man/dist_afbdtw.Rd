@@ -37,5 +37,5 @@ X <- dataDTWBI[, 1] ; Y <- dataDTWBI[, 2]
 AFBDTW_Dist <- dist_afbdtw(X, Y)
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

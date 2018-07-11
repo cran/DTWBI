@@ -51,5 +51,5 @@ colnames(comparative_cost) <- c("DTW", "DDTW", "AFBDTW", "DTW-D")
 comparative_cost
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

@@ -1,5 +1,5 @@
 #' @title Fraction of Standard Deviation (FSD)
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Estimates the Fraction of Standard Deviation (FSD) of two univariate signals Y (imputed values) and X (true values).
 #' @details
 #' This function returns the value of FSD of two vectors corresponding to univariate signals.

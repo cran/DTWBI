@@ -1,5 +1,5 @@
 #' @title Similarity
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Estimates the percentage of similarity of two univariate signals Y (imputed values) and X (true values).
 #' @details
 #' This function returns the value of similarity of two vectors corresponding to univariate signals.

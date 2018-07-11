@@ -1,5 +1,5 @@
 #' @title Estimating global features of a univariate signal
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Computes global features of a univariate signal, used as input for threshold and window definition in DTWBI algorithm.
 #'  Features computed are:
 #'  \itemize{
@@ -40,7 +40,8 @@
   mom3 <- e1071::skewness(X)
   nop <- length(.findPeaks(X))
   len <- length(X)
-  entro <- entropy(table(X), method="ML")
+  entro <- entropy(as.vector(table(X)), method="ML")
+  # out <- cbind(minx,maxx,avg,medianx,std,mom3,nop,len)
   out <- cbind(minx,maxx,avg,medianx,std,mom3,nop,len,entro)
   out <- format(out, digits=2, nsmall=2)
 }

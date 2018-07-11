@@ -36,5 +36,5 @@ Y <- X
 compute.nmae(Y,X) # By definition, NMAE = 0
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

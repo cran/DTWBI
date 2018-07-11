@@ -1,5 +1,5 @@
 #' @title DTW-based methods for univariate signals
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Finds the optimal alignment between two univariate time series based on DTW methods.
 #' @param X query vector
 #' @param Y response vector

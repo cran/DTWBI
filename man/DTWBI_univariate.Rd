@@ -4,23 +4,23 @@
 \alias{DTWBI_univariate}
 \title{DTWBI algorithm for univariate signals}
 \usage{
-DTWBI_univariate(data, t, T, DTW_method = "DTW", threshold_cos = NULL,
-  step_threshold = NULL, step_sim_win = NULL, ...)
+DTWBI_univariate(data, t_gap, T_gap, DTW_method = "DTW",
+  threshold_cos = NULL, step_threshold = NULL, thresh_cos_stop = 0.8, ...)
 }
 \arguments{
 \item{data}{input vector containing a large and continuous gap (eventually derived from local.derivative.ddtw() function)}
 
-\item{t}{location of the begining of the gap (eventually extracted from gapCreation function)}
+\item{t_gap}{location of the begining of the gap (eventually extracted from gapCreation function)}
 
-\item{T}{gap size (eventually extracted from gapCreation function)}
+\item{T_gap}{gap size (eventually extracted from gapCreation function)}
 
 \item{DTW_method}{DTW method used for imputation ("DTW", "DDTW", "AFBDTW"). By default "DTW".}
 
-\item{threshold_cos}{threshold used to define similar sequences to the query}
+\item{threshold_cos}{threshold used to define similar sequences to the query. By default, threshold_cos=0.9995 if sequence is longer than 10'000, and threshold_cos=0.995 if shorter.}
 
-\item{step_threshold}{step used within the loop determining the threshold}
+\item{step_threshold}{step used within the loop determining the threshold. By default, step_threshold=50 if sequence is longer than 10'000, step_threshold=10 if sequence length is between 1'000 and 10'000. Else, step_threshold=2.}
 
-\item{step_sim_win}{step used while looking for similar sequences to the query}
+\item{thresh_cos_stop}{Define the lowest cosine threshold acceptable to find a similar window to the query. By default, thresh_cos_stop=0.8.}
 
 \item{...}{additional arguments from the dtw() function}
 }
@@ -38,7 +38,7 @@ DTWBI_univariate returns a list containing the following elements:
 }
 }
 \description{
-Imputes values of a gap of position t and size T in a univariate signal based on DTW algorithm.
+Imputes values of a gap of position t_gap and size T in a univariate signal based on DTW algorithm.
 For more details on the method, see Phan et al. (2017) DOI: <10.1016/j.patrec.2017.08.019>.
 Default arguments of dtw() function are used but can be manually explicited and modified.
 }
@@ -49,9 +49,9 @@ X <- dataDTWBI[, 1]
 rate <- 0.1
 output <- gapCreation(X, rate)
 data <- output$output_vector
-t <- output$begin_gap
-T <- output$gap_size
-imputed_data <- DTWBI_univariate(data, t, T)
+gap_begin <- output$begin_gap
+gap_size <- output$gap_size
+imputed_data <- DTWBI_univariate(data, t_gap=gap_begin, T_gap=gap_size)
 plot(imputed_data$input_vector, type = "l", lwd = 2) # Uncomplete signal
 lines(imputed_data$output_vector, col = "red") # Imputed signal
 lines(y = imputed_data$query,
@@ -65,5 +65,5 @@ lines(y = imputed_data$imputation_window,
       col = "blue", lwd = 4) # Imputing proposal
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

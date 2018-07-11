@@ -36,5 +36,5 @@ Y[1] <- 0
 compute.fa2(Y,X)
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

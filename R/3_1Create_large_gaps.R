@@ -1,5 +1,5 @@
 #' @title Gap creation
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description This function creates a large continuous gap within a univariate signal.
 #' Gap size is defined as a percentage of input vector length.
 #' By default, the created gap starts at a random location.
@@ -39,8 +39,7 @@ gapCreation <- function(X, rate, begin=NULL){
   gap_size <- round(rate*length(X))
   if(is.null(begin)){
     gap_id <- sample(1:(length(X)-gap_size), 1)
-  }
-  else(gap_id <- begin)
+  } else {gap_id <- begin}
   Xgap[gap_id:(gap_id+gap_size-1)] <- NA
   
   gap_final <- list("output_vector" = Xgap,

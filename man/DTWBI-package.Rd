@@ -36,11 +36,12 @@ ref <- dataDTWBI$query
 
 # Create a gap within query (10\% of signal size)
 query <- gapCreation(query, rate = 0.1)
-t <- query$begin_gap
-T <- query$gap_size
+data <- query$output_vector
+begin_gap <- query$begin_gap
+size_gap <- query$gap_size
 
 # Fill gap using DTWBI algorithm
-results_DTWBI <- DTWBI_univariate(query$output_vector, t, T)
+results_DTWBI <- DTWBI_univariate(data, t_gap = begin_gap, T_gap = size_gap)
 
 # Plot
 plot(ref, type = "l")

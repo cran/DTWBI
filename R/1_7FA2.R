@@ -1,5 +1,5 @@
 #' @title FA2
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Estimates the FA2 of two univariate signals Y (imputed values) and X (true values).
 #' @details
 #' This function returns the value of FA2 of two vectors corresponding to univariate signals X (true values) and Y (imputed values).

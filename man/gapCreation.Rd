@@ -37,5 +37,5 @@ plot(output$input_vector, type = "l", col = "red", lwd = 2)
 lines(output$output_vector, lty = "dashed", lwd = 2)
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

@@ -23,5 +23,5 @@ plot(X, type = "b", ylim = c(-1, 1))
 lines(local.derivative.ddtw(X), col = "red")
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

@@ -41,5 +41,5 @@ X <- rep(runif(1), 10);Y <- rep(runif(1), 10)
 compute.fsd(Y,X)}
 }
 \author{
-DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 }

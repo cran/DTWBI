@@ -1,5 +1,5 @@
 #' @title Fractional Bias (FB)
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description Estimates the Fractional Bias (FB) of two univariate signals Y (imputed values) and X (true values).
 #' @details
 #' This function returns the value of FB of two vectors corresponding to univariate signals, indicating whether predicted values are underestimated or overestimated compared to true values.

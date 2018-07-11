@@ -1,5 +1,5 @@
 #' @title Adaptive Feature Based Dynamic Time Warping algorithm
-#' @author DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie
+#' @author Camille Dezecache, Hong T. T. Phan, Emilie Poisson-Caillault
 #' @description 
 #' This function estimates a distance matrix which is used as an input in dtw() function (package dtw) to align two univariate signals following Adaptative Feature Based Dynamic Time Warping algorithm (AFBDTW).
 #' @param q query vector
